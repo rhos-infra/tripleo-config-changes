@@ -28,6 +28,11 @@ subparsers:
                       help: |
                           Enable multi cell deployment
                       default: False
+                  overcloud-nova-placement:
+                      type: Bool
+                      help: |
+                          Enable nova placement options
+                      default: False
 
             - title: Overcloud Options
               options:

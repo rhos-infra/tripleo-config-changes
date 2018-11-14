@@ -1,0 +1,17 @@
+parameter_defaults:
+    NovaSchedulerDefaultFilters:
+        - RetryFilter
+        - RamFilter
+        - DiskFilter
+        - ComputeFilter
+        - ComputeCapabilitiesFilter
+        - ImagePropertiesFilter
+        - ServerGroupAffinityFilter
+        - ServerGroupAntiAffinityFilter
+
+    ControllerExtraConfig:
+        nova::config::nova_config:
+            scheduler/query_placement_for_availability_zone:
+                value: {{ query_placement_for_availability_zone }}
+    NovaSchedulePlacementAggregateRequiredForTenants: {{ NovaSchedulePlacementAggregateRequiredForTenants }}
+    NovaSchedulerLimitTenantsToPlacementAggregate: {{ NovaSchedulerLimitTenantsToPlacementAggregate }}
