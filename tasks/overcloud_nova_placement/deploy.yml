@@ -1,0 +1,8 @@
+---
+- import_tasks: ../common/overcloud_deploy.yml
+
+- name: Run tempest plugin tests
+  shell: |
+    source /home/stack/overcloudrc
+    cd /home/stack/testingdir/
+    tempest run --regex tempest_compute_plugin.* | tee -a /home/stack/placement-tests.log
