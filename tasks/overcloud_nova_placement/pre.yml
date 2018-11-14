@@ -1,0 +1,15 @@
+---
+- name: create public VIP environment file
+  template:
+      src: templates/nova_options.yaml.j2
+      dest: "~/nova_options.yaml"
+
+- name: Create overcloud deploy command including the nova options
+  include: ../common/append_env_to_script.yml
+  loop_control:
+    loop_var: confchange
+  with_items:
+    - step: "Customize nova options"
+      script: "~/overcloud_customize_nova.sh"
+      environment_file:
+        - "~/nova_options.yaml"
