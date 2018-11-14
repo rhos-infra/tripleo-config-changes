@@ -1,0 +1,10 @@
+---
+- name: Validate nova options got applied
+  hosts: undercloud-0
+  gather_facts: false
+  any_errors_fatal: true
+  tasks:
+    - name: Post deploy nova validations
+      shell: |
+        source ~/{{ test.overcloud.stack }}rc
+        openstack server list

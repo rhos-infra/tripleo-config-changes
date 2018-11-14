@@ -14,3 +14,7 @@
 - name: multi cell deployment
   import_playbook: tasks/multi_cell_v2_osp16/main.yml
   when: test.add.additional.cell|default(False)
+
+- name: Enable overcloud nova placement
+  import_playbook: tasks/overcloud_nova_placement/main.yml
+  when: test.overcloud.nova.placement|default(False)
