@@ -1,0 +1,57 @@
+---
+- name: Test placement flags (Nova) 
+  hosts: undercloud-0
+  gather_facts: yes
+  any_errors_fatal: true
+  tasks:
+    - name: update tempest conf opts-1
+      ini_file:
+        path: /home/stack/tempest-dir/etc/tempest.conf
+        section: tempest-compute-plugin
+        option: "{{ item.0 }}"
+        value: "{{ item.1 }}"
+      with_items:
+        - [ 'limit_tenants_to_placement_aggregate', 'True' ]
+        - [ 'placement_aggregate_required_for_tenants', 'False' ]
+        - [ 'query_placement_for_availability_zone', 'False' ]
+    - template:
+        src: ../templates/nova_options_1.yaml.j2
+        dest: /home/stack/virt/config_heat.yaml
+        force: yes
+        owner: stack
+        mode: 0664
+    - import_tasks: deploy.yml 
+    - name: update tempest conf opts-2
+      ini_file:
+        path: /home/stack/tempest-dir/etc/tempest.conf
+        section: tempest-compute-plugin
+        option: "{{ item.0 }}"
+        value: "{{ item.1 }}"
+      with_items:
+        - [ 'limit_tenants_to_placement_aggregate', 'False' ]
+        - [ 'placement_aggregate_required_for_tenants', 'False' ]
+        - [ 'query_placement_for_availability_zone', 'True' ]
+    - template:
+        src: ../templates/nova_options_2.yaml.j2
+        dest: /home/stack/virt/config_heat.yaml
+        force: yes
+        owner: stack
+        mode: 0664
+    - import_tasks: deploy.yml
+    - name: update tempest conf opts-3
+      ini_file:
+        path: /home/stack/tempest-dir/etc/tempest.conf
+        section: tempest-compute-plugin
+        option: "{{ item.0 }}"
+        value: "{{ item.1 }}"
+      with_items:
+        - [ 'limit_tenants_to_placement_aggregate', 'True' ]
+        - [ 'placement_aggregate_required_for_tenants', 'True' ]
+        - [ 'query_placement_for_availability_zone', 'True' ]
+    - template:
+        src: ../templates/nova_options_3.yaml.j2
+        dest: /home/stack/virt/config_heat.yaml
+        force: yes
+        owner: stack
+        mode: 0664
+    - import_tasks: deploy.yml
