@@ -1,0 +1,9 @@
+---
+- name: Validate timezone got changed
+  hosts: overcloud_nodes
+  gather_facts: false
+  any_errors_fatal: true
+  tasks:
+    - name: Validate timezone is set to Asia/Tokyo
+
+    - name: Validate /etc/localtime is a symbolic file to a file under /usr/share/zoneinfo.
