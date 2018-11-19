@@ -18,6 +18,11 @@ subparsers:
                       help: |
                           Enable overcloud ssl
                       default: False
+                  overcloud-timezone-change:
+                      type: Bool
+                      help: |
+                          Change timezone on overcloud node
+                      default: False
 
             - title: Overcloud Options
               options:

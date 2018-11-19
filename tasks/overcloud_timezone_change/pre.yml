@@ -1,0 +1,15 @@
+---
+- name: create timezone environment file
+  template:
+      src: templates/timezone.yaml.j2
+      dest: "~/timezone.yaml"
+
+- name: Create overcloud deploy command including the timezone environment files
+  include: ../common/append_env_to_script.yml
+  loop_control:
+    loop_var: confchange
+  with_items:
+    - step: "Change timezone on overcloud nodes"
+      script: "~/overcloud_change_timezone.sh"
+      environment_file:
+        - "~/timezone.yaml"
