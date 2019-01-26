@@ -18,6 +18,11 @@ subparsers:
                       help: |
                           Enable overcloud ssl
                       default: False
+                  tripleo-modify-image:
+                      type: Bool
+                      help: |
+                          Enable tripleo modify image ansible role
+                      default: False
 
             - title: Overcloud Options
               options:
@@ -25,3 +30,21 @@ subparsers:
                       type: Value
                       help: Overrides the overcloud stack name
                       default: "overcloud"
+
+            - title: tripleo-modify-image options
+              options:
+                  tripleo-modify-container:
+                      type: Value
+                      help: |
+                          Name of container without "openstack-" preposition update. For example - 'nova-compute'.
+                          Recommended to update one container image at time.
+                  tripleo-modify-method:
+                      type: Value
+                      help: Choose modify option from 'yum-update', 'rpm', 'modify-image'
+                      default: "yum-update"
+                  tripleo-modify-rpm-url:
+                      type: Value
+                      help: Location for rpm file which will be injected to container image
+                  tripleo-modify-image-url:
+                      type: Value
+                      help: Location for Dockerfile file which will be used to update container image
