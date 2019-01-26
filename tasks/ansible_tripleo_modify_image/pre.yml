@@ -1,0 +1,49 @@
+- name: make copy of containers-prepare-parameter.yaml
+  copy:
+      src: "~/containers-prepare-parameter.yaml"
+      dest: "~/containers-prepare-parameter-copy.yaml"
+      remote_src: yes
+
+- name: get overcloud_version
+  shell: cat /etc/rhosp-release  |awk -F"." '{print $1}'| awk '{print $6}'
+  register: rhosp_release
+
+- set_fact:
+    rhosp_version: "{{ rhosp_release.stdout }}"
+
+- name: include tripleo-modify-image in containers-prepare-parameter-copy.yaml
+  blockinfile:
+    path: "~/containers-prepare-parameter-copy.yaml"
+    block: |1+
+       - includes:
+         - nova-compute
+         modify_role: tripleo-modify-image
+         modify_append_tag: "-hotfix"
+         modify_vars:
+          tasks_from: rpm_install.yml
+          rpms_path: /home/stack/nova-hotfix-pkgs
+  when: test.tripleo.modify.method == "rpm"
+
+- name: execute 'openstack tripleo container image prepare'
+  shell: openstack tripleo container image prepare -e ~/containers-prepare-parameter-copy.yaml
+  register: openstack_tripleo_container_image_prepare
+  failed_when: '"openstack-nova-compute:latest-hotfix" not in openstack_tripleo_container_image_prepare.stdout'
+
+- name: copy template of hotfix.yaml
+  template:
+    src: templates/hotfix.yaml.j2
+    dest: "~/hotfix.yaml"
+
+- name: pull modified docker image to local registry
+  docker_image:
+    name: 192.168.24.1:8787/rhosp{{ rhosp_version }}/openstack-nova-compute:latest-hotfix
+
+- name: Create overcloud deploy command including the hotfix.yaml
+  include: ../common/append_env_to_script.yml
+  loop_control:
+    loop_var: confchange
+  with_items:
+    - step: "update nova overcloud image"
+      script: "~/overcloud_modify_image.sh"
+      environment_file:
+        - "~/hotfix.yaml"
