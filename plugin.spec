@@ -18,6 +18,11 @@ subparsers:
                       help: |
                           Enable overcloud ssl
                       default: False
+                  tripleo-modify-image:
+                      type: Bool
+                      help: |
+                          Enable tripleo modify image ansible role
+                      default: False
 
             - title: Overcloud Options
               options:
@@ -25,3 +30,10 @@ subparsers:
                       type: Value
                       help: Overrides the overcloud stack name
                       default: "overcloud"
+
+            - title: tripleo-modify-image options
+              options:
+                  tripleo-modify-method:
+                      type: Value
+                      help: choose modify option from 'yum-update', 'rpm', 'modify-image'
+                      default: "yum-update"
