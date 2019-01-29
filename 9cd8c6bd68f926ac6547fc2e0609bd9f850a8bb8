@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "59fafea5_4e16fa81",
+        "filename": "tasks/ansible_tripleo_modify_image/pre.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1010849
+      },
+      "writtenOn": "2019-01-29T11:14:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9847fc86_71a2ea0c",
+      "range": {
+        "startLine": 90,
+        "startChar": 14,
+        "endLine": 90,
+        "endChar": 26
+      },
+      "revId": "9cd8c6bd68f926ac6547fc2e0609bd9f850a8bb8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9d9b778c_2bfc7b2c",
         "filename": "tasks/ansible_tripleo_modify_image/pre.yml",
         "patchSetId": 7
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "95efd38b_2997b977",
+        "filename": "tasks/ansible_tripleo_modify_image/pre.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 1010849
+      },
+      "writtenOn": "2019-01-29T11:14:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9d9b778c_2bfc7b2c",
+      "range": {
+        "startLine": 94,
+        "startChar": 10,
+        "endLine": 94,
+        "endChar": 22
+      },
+      "revId": "9cd8c6bd68f926ac6547fc2e0609bd9f850a8bb8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "376b3d91_39e35f57",
         "filename": "tasks/ansible_tripleo_modify_image/templates/hotfix.yaml.j2",
         "patchSetId": 7
@@ -59,6 +107,30 @@
       "writtenOn": "2019-01-28T18:46:45Z",
       "side": 1,
       "message": "I think this is not required.",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 21
+      },
+      "revId": "9cd8c6bd68f926ac6547fc2e0609bd9f850a8bb8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "25a9c088_1471df8e",
+        "filename": "tasks/ansible_tripleo_modify_image/templates/hotfix.yaml.j2",
+        "patchSetId": 7
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1010849
+      },
+      "writtenOn": "2019-01-29T11:14:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "376b3d91_39e35f57",
       "range": {
         "startLine": 2,
         "startChar": 0,
