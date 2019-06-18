@@ -23,11 +23,32 @@
     dest: ~/{{ test.tripleo.modify.container }}-modify-dir
   when: test.tripleo.modify.method == "rpm" or test.tripleo.modify.method == "modify-image"
 
+  - name: get namespace
+    shell: grep namespace containers-prepare-parameter.yaml |grep -v ceph_ |awk -F ' '  '{print $2}'
+    register: namespace_output
+
+  - name: get tag
+    shell: grep tag containers-prepare-parameter.yaml |grep -v ceph_tag |awk '{$1=$1;print}'
+    register: tag_output
+
+  - set_fact:
+      namespace: "{{ namespace_output.stdout }}"
+  - set_fact:
+      tag: "{{ tag_output.stdout }}"
+
+
+
 - name: include tripleo-modify-image using rpm method in containers-prepare-parameter-copy.yaml
   blockinfile:
     path: "~/containers-prepare-parameter-copy.yaml"
     block: |1+
-       - includes:
+       - push_destination: true
+         set:
+           name_prefix: openstack-
+           name_suffix: ''
+           namespace: {{ namespace }}
+           {{ tag }}
+         includes:
          - {{ test.tripleo.modify.container }}
          modify_role: tripleo-modify-image
          modify_append_tag: "-hotfix"
@@ -40,7 +61,13 @@
   blockinfile:
     path: "~/containers-prepare-parameter-copy.yaml"
     block: |1+
-       - includes:
+       - push_destination: true
+         set:
+           name_prefix: openstack-
+           name_suffix: ''
+           namespace: {{ namespace }}
+           {{ tag }}
+         includes:
          - {{ test.tripleo.modify.container }}
          modify_role: tripleo-modify-image
          modify_append_tag: "-hotfix"
@@ -54,7 +81,13 @@
   blockinfile:
     path: "~/containers-prepare-parameter-copy.yaml"
     block: |1+
-       - includes:
+       - push_destination: true
+         set:
+           name_prefix: openstack-
+           name_suffix: ''
+           namespace: {{ namespace }}
+           {{ tag }}
+         includes:g
          - {{ test.tripleo.modify.container }}
          modify_role: tripleo-modify-image
          modify_append_tag: "-hotfix"
