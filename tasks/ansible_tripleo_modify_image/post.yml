@@ -6,7 +6,7 @@
   tasks:
     - name: Validate the container get update image with "latest-hotfix" tag
       shell: |
-        docker ps |grep {{ test.tripleo.modify.container }}
+        podman ps |grep {{ test.tripleo.modify.container }}
       register: containers_list
       failed_when: '"latest-hotfix" not in containers_list.stdout'
       become: true
