@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6d4487b8_a8460e92",
+        "filename": "tasks/overcloud_nova_placement/pre.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1017140
+      },
+      "writtenOn": "2020-05-12T19:30:35Z",
+      "side": 1,
+      "message": "If you are using the existing overcloud_deploy.sh script then you might first need to copy this to the /home/stack and change it\u0027s name to \"overcloud_customize_nova.sh\"\n\nhttps://github.com/rhos-infra/tripleo-config-changes/blob/master/tasks/multi_cell_v2_osp16/pre.yml#L32",
+      "range": {
+        "startLine": 13,
+        "startChar": 17,
+        "endLine": 13,
+        "endChar": 44
+      },
+      "revId": "399131e0eb7cd5c6e898dace9f1cff5a31d6dd05",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
