@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ef47c602_59ba7dd0",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 5
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1012743
+      },
+      "writtenOn": "2020-05-14T14:52:03Z",
+      "side": 1,
+      "message": "at /home/stack/tempest-dir/",
+      "range": {
+        "startLine": 17,
+        "startChar": 67,
+        "endLine": 17,
+        "endChar": 68
+      },
+      "revId": "84a71b2ee87b9cd18e831fce69ab3763048e2930",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ca555f9b_8e1e66f2",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 5
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1012743
+      },
+      "writtenOn": "2020-05-14T14:52:03Z",
+      "side": 1,
+      "message": "are",
+      "range": {
+        "startLine": 17,
+        "startChar": 38,
+        "endLine": 17,
+        "endChar": 40
+      },
+      "revId": "84a71b2ee87b9cd18e831fce69ab3763048e2930",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
