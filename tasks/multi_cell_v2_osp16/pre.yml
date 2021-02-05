@@ -53,3 +53,15 @@
         path: /home/stack/overcloud_cell_deployment.sh
         regexp: '--stack overcloud'
         replace: '--stack cell1'
+
+- name: Remove cloud names yaml if present
+  ansible.builtin.lineinfile:
+    path: /home/stack/overcloud_cell_deployment.sh
+    state: absent
+    regexp: 'cloud-names'
+
+- name: Remove public vip yaml if present
+  ansible.builtin.lineinfile:
+    path: /home/stack/overcloud_cell_deployment.sh
+    state: absent
+    regexp: 'public_vip'
