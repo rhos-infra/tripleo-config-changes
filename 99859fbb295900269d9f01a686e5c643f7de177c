@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cbcfff19_655dd004",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017140
+      },
+      "writtenOn": "2021-02-12T20:32:03Z",
+      "side": 1,
+      "message": "looks good and also I see the tempest test within the cell passing here:\n\nhttps://rhos-ci-staging-jenkins.lab.eng.tlv2.redhat.com/job/DFG-compute-nova-16.1_director-rhel-virthost-1cont_1comp_1cell_1ipa-ipv4-geneve-multi-cell-phase3/18//artifact/tempest-results/tempest-results-compute.1.html",
+      "revId": "99859fbb295900269d9f01a686e5c643f7de177c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
