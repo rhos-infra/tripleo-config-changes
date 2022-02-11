@@ -46,6 +46,30 @@
       },
       "revId": "ca9962868593cf780b68fd3df13f7d764f3532ff",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bca62fed_cf5e4383",
+        "filename": "tasks/multi_cell_v2_osp16/pre.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1012331
+      },
+      "writtenOn": "2022-02-11T20:03:48Z",
+      "side": 1,
+      "message": "Oh right, there\u0027s no nova on the undercloud in 17. We shouldn\u0027t run this playbook in 17 I believe, but then again, there\u0027s no 16.3 either so I guess it\u0027s fine like that.",
+      "parentUuid": "624d5248_383c97a0",
+      "range": {
+        "startLine": 21,
+        "startChar": 37,
+        "endLine": 21,
+        "endChar": 38
+      },
+      "revId": "ca9962868593cf780b68fd3df13f7d764f3532ff",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
