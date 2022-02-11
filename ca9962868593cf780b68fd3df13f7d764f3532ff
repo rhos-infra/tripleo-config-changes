@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dfde37e1_a7ab741b",
+        "filename": "tasks/multi_cell_v2_osp16/pre.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1012331
+      },
+      "writtenOn": "2022-02-11T19:54:35Z",
+      "side": 1,
+      "message": "It\u0027s probably safe to \u003e\u003d 16.2 here.",
+      "range": {
+        "startLine": 21,
+        "startChar": 37,
+        "endLine": 21,
+        "endChar": 38
+      },
+      "revId": "ca9962868593cf780b68fd3df13f7d764f3532ff",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
