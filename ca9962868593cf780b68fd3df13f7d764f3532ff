@@ -22,6 +22,30 @@
       },
       "revId": "ca9962868593cf780b68fd3df13f7d764f3532ff",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "624d5248_383c97a0",
+        "filename": "tasks/multi_cell_v2_osp16/pre.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1017127
+      },
+      "writtenOn": "2022-02-11T19:58:46Z",
+      "side": 1,
+      "message": "I had it like that originally in my local repo, but when I tried it on 17 it failed due to the changes with UC. I can change to \u003e\u003d and update it back to \u003d\u003d later when we come up with a 17 solution though. LMWYT.",
+      "parentUuid": "dfde37e1_a7ab741b",
+      "range": {
+        "startLine": 21,
+        "startChar": 37,
+        "endLine": 21,
+        "endChar": 38
+      },
+      "revId": "ca9962868593cf780b68fd3df13f7d764f3532ff",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
