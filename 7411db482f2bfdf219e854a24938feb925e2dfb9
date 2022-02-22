@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "37209252_adc48f28",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017127
+      },
+      "writtenOn": "2022-02-22T16:12:09Z",
+      "side": 1,
+      "message": "Updated when condition to leverage tempest roles of converting string versioning for openstack e.g. wallaby and convert it to a float:\n\n(venv) root@6905d6ebde1c:~/infrared# infrared tripleo-config-changes     --add-additional-cell yes --openstack-version victoria\nTASK [create cell1 directory] ******************************************************************************************************************************************************\nMonday 21 February 2022  21:25:39 +0000 (0:00:12.144)       0:00:19.382 ******* \nchanged: [undercloud-0]\n\nTASK [debug] ***********************************************************************************************************************************************************************\nMonday 21 February 2022  21:25:41 +0000 (0:00:01.402)       0:00:20.784 ******* \nok: [undercloud-0] \u003d\u003e {\n    \"msg\": \"Current openstack version victoria\"\n}\n\nTASK [export cell-input.yaml file] *************************************************************************************************************************************************\nMonday 21 February 2022  21:25:41 +0000 (0:00:00.078)       0:00:20.863 ******* \nskipping: [undercloud-0]\n\nTASK [export cell-input.yaml file 16.2+] *******************************************************************************************************************************************\nMonday 21 February 2022  21:25:41 +0000 (0:00:00.063)       0:00:20.926 ******* \nchanged: [undercloud-0]\n\nTASK [Generate a role file] ********************************************************************************************************************************************************\nMonday 21 February 2022  21:25:46 +0000 (0:00:05.498)       0:00:26.424 ******* \nchanged: [undercloud-0]\n... (Removed for brevity)\n\nTASK [validate the deployment success] *********************************************************************************************************************************************\nMonday 21 February 2022  21:48:31 +0000 (0:00:03.207)       0:23:11.342 ******* \nchanged: [undercloud-0]\n\nTASK [post tasks script] ***********************************************************************************************************************************************************\nMonday 21 February 2022  21:48:36 +0000 (0:00:05.314)       0:23:16.656 ******* \nchanged: [undercloud-0]\n\nPLAY RECAP *************************************************************************************************************************************************************************\ncompute-0                  : ok\u003d0    changed\u003d0    unreachable\u003d0    failed\u003d0    skipped\u003d1    rescued\u003d0    ignored\u003d0   \ncompute-2                  : ok\u003d0    changed\u003d0    unreachable\u003d0    failed\u003d0    skipped\u003d1    rescued\u003d0    ignored\u003d0   \ncompute-3                  : ok\u003d0    changed\u003d0    unreachable\u003d0    failed\u003d0    skipped\u003d1    rescued\u003d0    ignored\u003d0   \nundercloud-0               : ok\u003d25   changed\u003d20   unreachable\u003d0    failed\u003d0    skipped\u003d36   rescued\u003d0    ignored\u003d0   ",
+      "revId": "7411db482f2bfdf219e854a24938feb925e2dfb9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
