@@ -33,6 +33,24 @@
       "message": "Can you also post the microversion error being resolved with this patch? maybe just the task or similar",
       "revId": "23dd46d24e1b85b267f8e87f7474d423ca088ffc",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8587a322_2eaadd74",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017127
+      },
+      "writtenOn": "2022-02-28T15:10:46Z",
+      "side": 1,
+      "message": "I do not believe this upstream change was associated with a specific microversion, checking COMPUTE API microversion history I also do not see anything mentioning the change. It purely a 16.1 to 16.2 change from downstream perspective.",
+      "parentUuid": "13a8d281_ae6e333d",
+      "revId": "23dd46d24e1b85b267f8e87f7474d423ca088ffc",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
