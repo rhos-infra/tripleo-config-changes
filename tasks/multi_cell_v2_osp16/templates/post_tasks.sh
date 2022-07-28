@@ -1,17 +1,22 @@
 #!/bin/bash
-source ~/stackrc
+test -f ~/stackrc && source ~/stackrc
 mkdir -p /home/stack/inventories
 
-for i in overcloud cell1; do \
+if [ -d ~/overcloud-deploy ]; then
+  cp -f ~/overcloud-deploy/overcloud/tripleo-ansible-inventory.yaml ~/inventories/tripleo-ansible-inventory-overcloud.yaml
+  cp -f ~/overcloud-deploy/cell1/tripleo-ansible-inventory.yaml ~/inventories/tripleo-ansible-inventory-cell1.yaml
+else
+  for i in overcloud cell1; do
     /usr/bin/tripleo-ansible-inventory \
-        --static-yaml-inventory /home/stack/inventories/${i}.yaml \
-        --stack ${i}; \
-done
+      --static-yaml-inventory /home/stack/inventories/tripleo-ansible-inventory-${i}.yaml \
+      --stack ${i}
+  done
+fi
 
-CELL_CTRL_IP=$(openstack server list -f value -c Networks --name cellcontrol-0 | sed 's/ctlplane=//')
-CTRL_IP=$(openstack server list -f value -c Networks --name controller-0 | sed 's/ctlplane=//')
+CELL_CTRL_IP=$(ansible-inventory -i ~/inventories/tripleo-ansible-inventory-cell1.yaml --host cell1-controller-0 | jq -r .ctlplane_ip)
+CTRL_IP=$(ansible-inventory -i ~/inventories/tripleo-ansible-inventory-overcloud.yaml --host controller-0 | jq -r .ctlplane_ip)
 CELL_INTERNALAPI_INFO=$(ssh heat-admin@${CELL_CTRL_IP} egrep cell1.internalapi /etc/hosts)
-ansible -i /usr/bin/tripleo-ansible-inventory Controller -b -m lineinfile -a "dest=/etc/hosts line=\"$CELL_INTERNALAPI_INFO\""
+ansible -i ~/inventories/tripleo-ansible-inventory-overcloud.yaml Controller -b -m lineinfile -a "dest=/etc/hosts line=\"$CELL_INTERNALAPI_INFO\""
 
 ANSIBLE_HOST_KEY_CHECKING=False \
 ANSIBLE_SSH_RETRIES=3 \
@@ -81,8 +86,6 @@ do
 done
 
 source ~/stackrc
-CTRL=controller-0
-CTRL_IP=$(openstack server list -f value -c Networks --name $CTRL | sed 's/ctlplane=//')
 export CONTAINERCLI='podman'
 set +e
 $(ssh heat-admin@${CTRL_IP} sudo ${CONTAINERCLI} exec -i -u root nova_conductor \
