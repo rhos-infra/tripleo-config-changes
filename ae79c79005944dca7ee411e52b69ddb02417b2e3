@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fbd0921b_384f7991",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010723
+      },
+      "writtenOn": "2022-08-01T15:45:04Z",
+      "side": 1,
+      "message": "tested this on 16.1.8 and 17.0 multi-cell v2 envs",
+      "revId": "ae79c79005944dca7ee411e52b69ddb02417b2e3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
