@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "350d7517_718d481f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010723
+      },
+      "writtenOn": "2022-08-01T16:19:45Z",
+      "side": 1,
+      "message": "I would use a single file, called tasks/multi_cell_v2/templates/post_tasks.sh.\nSplitting it would keep a lot of duplication, harder to maintain, more error prone (if forgetting to update its sibling, when changed another one)",
+      "parentUuid": "0e052044_e57f12d0",
+      "revId": "4f2c34f0bec944808c3723b65cc79afe3e1ce577",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "134329a5_b88a8c9a",
