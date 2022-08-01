@@ -33,6 +33,24 @@
       "message": "@Martin, in my osp16 env, the group holding the node is cell1_CellController and cell1-cellcontrol-0, while in 17.0 those are CellController and cell1-controller-0 respectively. I hope this is fine",
       "revId": "4f2c34f0bec944808c3723b65cc79afe3e1ce577",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "31571187_d6bdcc1d",
+        "filename": "tasks/multi_cell_v2_osp16/templates/post_tasks.sh",
+        "patchSetId": 5
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1010723
+      },
+      "writtenOn": "2022-08-01T16:18:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "134329a5_b88a8c9a",
+      "revId": "4f2c34f0bec944808c3723b65cc79afe3e1ce577",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
