@@ -16,6 +16,52 @@
       "message": "testing it...",
       "revId": "da7500a6bd9578420cc844a5146fcc3868dd982c",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2e0ef95d_acb96dfc",
+        "filename": "tasks/multi_cell_v2_osp16/templates/post_tasks.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1012289
+      },
+      "writtenOn": "2022-08-01T08:13:26Z",
+      "side": 1,
+      "message": "should be tripleo-ansible-ingentory-${i}.yaml to match the above copy commands target file name.",
+      "range": {
+        "startLine": 11,
+        "startChar": 54,
+        "endLine": 11,
+        "endChar": 58
+      },
+      "revId": "da7500a6bd9578420cc844a5146fcc3868dd982c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7914c8b1_42247469",
+        "filename": "tasks/multi_cell_v2_osp16/templates/post_tasks.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1012289
+      },
+      "writtenOn": "2022-08-01T08:13:26Z",
+      "side": 1,
+      "message": "this one here would now not work when the inventory files got created via the for loop above.",
+      "range": {
+        "startLine": 16,
+        "startChar": 35,
+        "endLine": 16,
+        "endChar": 86
+      },
+      "revId": "da7500a6bd9578420cc844a5146fcc3868dd982c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
