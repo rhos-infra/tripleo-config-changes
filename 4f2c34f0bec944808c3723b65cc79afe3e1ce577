@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0e052044_e57f12d0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017127
+      },
+      "writtenOn": "2022-08-01T16:10:52Z",
+      "side": 1,
+      "message": "Thanks for this Bogdan, one thing I want to note is originally I had planned to split some of the tasks files based on release due to all the additional changes introduced in 17.  Specifically I plan on updating [1] to be two separate task yamls e.g. pre16.yml and pre17.yml, with the call being updated in [2].  This is to account for the new node, network, and vip provisioning steps needed for 17.  The way you have setup post_tasks.sh can handle either release with your changes, but if you think it\u0027s easier to maintain I\u0027m also ok with having a post_tasks_16.sh and post_tasks_17.sh.\n\n\n[1] https://github.com/rhos-infra/tripleo-config-changes/blob/master/tasks/multi_cell_v2_osp16/pre.yml\n[2] https://github.com/rhos-infra/tripleo-config-changes/blob/master/tasks/multi_cell_v2_osp16/main.yml",
+      "revId": "4f2c34f0bec944808c3723b65cc79afe3e1ce577",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "134329a5_b88a8c9a",
