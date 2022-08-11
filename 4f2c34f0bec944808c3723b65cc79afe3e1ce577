@@ -36,6 +36,23 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c597e5fd_78b6d9e3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010723
+      },
+      "writtenOn": "2022-08-11T13:39:02Z",
+      "side": 1,
+      "message": "this looks like needs more work.\n\nI can see on my 17.0 testing env, there is no longer \novercloud-deploy/overcloud/tripleo-ansible-inventory.yaml\nand\novercloud-deploy/cell1/tripleo-ansible-inventory.yaml\n\nbut:\n/home/stack/overcloud-deploy/overcloud/config-download/overcloud/tripleo-ansible-inventory.yaml\nand\novercloud-deploy/cell1/config-download/cell1/tripleo-ansible-inventory.yaml\n\nAnd it stores information in a different format, so jq returns nothing good.\n\n",
+      "revId": "4f2c34f0bec944808c3723b65cc79afe3e1ce577",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "134329a5_b88a8c9a",
