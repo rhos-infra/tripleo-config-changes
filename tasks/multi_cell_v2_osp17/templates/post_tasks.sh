@@ -1,17 +1,6 @@
 #!/bin/bash
-source ~/stackrc
-mkdir -p /home/stack/inventories
-
-for i in overcloud cell1; do \
-    /usr/bin/tripleo-ansible-inventory \
-        --static-yaml-inventory /home/stack/inventories/${i}.yaml \
-        --stack ${i}; \
-done
-
-CELL_CTRL_IP=$(openstack server list -f value -c Networks --name cellcontrol-0 | sed 's/ctlplane=//')
-CTRL_IP=$(openstack server list -f value -c Networks --name controller-0 | sed 's/ctlplane=//')
-CELL_INTERNALAPI_INFO=$(ssh heat-admin@${CELL_CTRL_IP} egrep cell1.internalapi /etc/hosts)
-ansible -i /usr/bin/tripleo-ansible-inventory Controller -b -m lineinfile -a "dest=/etc/hosts line=\"$CELL_INTERNALAPI_INFO\""
+set -e
+test -f ~/stackrc && source ~/stackrc
 
 ANSIBLE_HOST_KEY_CHECKING=False \
 ANSIBLE_SSH_RETRIES=3 \
@@ -81,10 +70,9 @@ do
 done
 
 source ~/stackrc
-CTRL=controller-0
-CTRL_IP=$(openstack server list -f value -c Networks --name $CTRL | sed 's/ctlplane=//')
 export CONTAINERCLI='podman'
 set +e
+CTRL_IP=$(ansible-inventory -i ~/overcloud-deploy/overcloud/config-download/overcloud/tripleo-ansible-inventory.yaml --host controller-0 | jq -r .ctlplane_ip)
 $(ssh heat-admin@${CTRL_IP} sudo ${CONTAINERCLI} exec -i -u root nova_conductor \
 nova-manage db archive_deleted_rows --until-complete --all-cells >> /dev/null 2>&1)
 set -e
