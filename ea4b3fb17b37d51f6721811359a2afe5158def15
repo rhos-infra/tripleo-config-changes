@@ -16,6 +16,24 @@
       "message": "NOTE: this is not necessarily true, may was a testing env specifc issue.\nTripleo should normally create it, by multi-stack feature design.",
       "revId": "ea4b3fb17b37d51f6721811359a2afe5158def15",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "64a2dc99_c746ae2c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 8
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1010723
+      },
+      "writtenOn": "2022-08-11T15:03:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5638f711_15aad1b4",
+      "revId": "ea4b3fb17b37d51f6721811359a2afe5158def15",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
