@@ -53,12 +53,12 @@
 
   - name: copy the cell1.yaml environment file
     template:
-          src: templates/cell1.yaml.j2
+          src: templates/rhos_16/cell1.yaml.j2
           dest: /home/stack/cell1/cell1.yaml
 
 - name: copy the post_tasks script
   copy:
-        src: templates/post_tasks.sh
+        src: templates/rhos_16/post_tasks.sh
         dest: /home/stack/cell1/post_tasks.sh
         mode: '0755'
 
