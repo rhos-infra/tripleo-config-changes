@@ -16,6 +16,24 @@
       "message": "Shouldn\u0027t this copy both ~/overcloud-deploy/overcloud/config-download/overcloud/tripleo-ansible-inventory.yaml and ~/overcloud-deploy/cell1/config-download/overcloud/tripleo-ansible-inventory.yaml to the inventories directory?",
       "revId": "4078aebe6ae5d715ccf9a29c13449b9d8ebbb4bd",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dace02bb_306300a2",
+        "filename": "tasks/multi_cell_v2_osp17/templates/post_tasks.sh",
+        "patchSetId": 10
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1010723
+      },
+      "writtenOn": "2022-10-17T13:46:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1720c06f_523fa390",
+      "revId": "4078aebe6ae5d715ccf9a29c13449b9d8ebbb4bd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
