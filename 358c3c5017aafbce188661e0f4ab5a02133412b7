@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4ffebf89_ac98b7f4",
+        "filename": "tasks/multi_cell_v2_osp17/templates/post_tasks.sh",
+        "patchSetId": 11
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1006992
+      },
+      "writtenOn": "2022-10-18T21:00:08Z",
+      "side": 1,
+      "message": "Do we know for the 16 scenario that these files will have been created? \n\nI understand for 17 the UC doesn\u0027t have nova and that this script is branchless, but couldn\u0027t use add a condition so that is uses the old approach for 16 and thew new approach for 17 because customers are still going to use the old approach and we probably don\u0027t want to change 16 as it\u0027s now stable.",
+      "revId": "358c3c5017aafbce188661e0f4ab5a02133412b7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "84a6e8f5_8227966d",
+        "filename": "tasks/multi_cell_v2_osp17/templates/post_tasks.sh",
+        "patchSetId": 11
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1006992
+      },
+      "writtenOn": "2022-10-18T21:00:08Z",
+      "side": 1,
+      "message": "If you do the following here:\n\n  -e internal_api_vip\u003d172.17.1.63\n\nThe does the job not hit BZ 2089512?",
+      "revId": "358c3c5017aafbce188661e0f4ab5a02133412b7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cff5a203_ffc6e0b6",
+        "filename": "tasks/multi_cell_v2_osp17/templates/post_tasks.sh",
+        "patchSetId": 11
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1006992
+      },
+      "writtenOn": "2022-10-18T21:00:08Z",
+      "side": 0,
+      "message": "How does the inventory produced by the above differ from the ones found in the folloiwng?\n\n~/overcloud-deploy/cell1/config-download/cell1/tripleo-ansible-inventory.yaml /home/stack/inventories/{cell1.yaml,overcloud.yaml}\n\nIs it true that the one which calls tripleo-ansible-inventory does not have the  internal_api_vip problem described in [1]?\n\nIf so, why? I think that\u0027s still the question to answer to resolve in order to pick an approach to solve BZ 2089512. \n\n[1] https://bugzilla.redhat.com/show_bug.cgi?id\u003d2089512#c107",
+      "revId": "5ee31dca2db50d960fc68dbeb77dde58fb7dec2c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
