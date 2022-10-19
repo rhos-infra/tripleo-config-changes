@@ -51,6 +51,24 @@
       "message": "If you do the following here:\n\n  -e internal_api_vip\u003d172.17.1.63\n\nThe does the job not hit BZ 2089512?",
       "revId": "358c3c5017aafbce188661e0f4ab5a02133412b7",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "085b629e_601996c9",
+        "filename": "tasks/multi_cell_v2_osp17/templates/post_tasks.sh",
+        "patchSetId": 11
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1010723
+      },
+      "writtenOn": "2022-10-19T12:37:09Z",
+      "side": 1,
+      "message": "we can\u0027t do that as the hosts adding task [0] expects the value properly fetched from the merged inventories groups vars for controllers vs cellcontrollers\n\n\n[0] https://github.com/openstack/tripleo-ansible/blob/13e9c808977f5a717d7ff33b87df9afed3b90c6f/tripleo_ansible/roles/tripleo_cellv2/tasks/add_internalapi_hosts_entries.yml#L1",
+      "parentUuid": "84a6e8f5_8227966d",
+      "revId": "358c3c5017aafbce188661e0f4ab5a02133412b7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
