@@ -54,6 +54,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "6f6d3f3b_1dc29900",
+        "filename": "tasks/multi_cell_v2_osp17/templates/post_tasks.sh",
+        "patchSetId": 11
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1017127
+      },
+      "writtenOn": "2022-10-19T15:08:30Z",
+      "side": 1,
+      "message": "Does it make sense to just rename multi_cell_v2_osp16 to just multi_cell_v2_osp and create branching template paths for 16 and 17+? Then update [1] to call the correct template versions. With all changes with preliminary steps for deploying in 17 I think [2] will result in a lot of conditional tasks for deployment.  It may be cleaner to have two pre.yml\u0027s based on the version.  WDYT? If you are ok with the approach I can submit it as a depends-on or as part of this commit.\n\n\n[1] https://github.com/rhos-infra/tripleo-config-changes/blob/master/tasks/multi_cell_v2_osp16/main.yml\n[2] https://github.com/rhos-infra/tripleo-config-changes/blob/master/tasks/multi_cell_v2_osp16/pre.yml",
+      "parentUuid": "04947b83_f9f79d9a",
+      "revId": "358c3c5017aafbce188661e0f4ab5a02133412b7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "84a6e8f5_8227966d",
