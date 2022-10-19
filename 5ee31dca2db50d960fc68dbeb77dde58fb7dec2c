@@ -52,6 +52,24 @@
       "parentUuid": "6cd1a28e_22e58934",
       "revId": "5ee31dca2db50d960fc68dbeb77dde58fb7dec2c",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d4062a6f_6d55d4b6",
+        "filename": "tasks/multi_cell_v2_osp17/templates/post_tasks.sh",
+        "patchSetId": 11
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1010723
+      },
+      "writtenOn": "2022-10-19T14:50:27Z",
+      "side": 0,
+      "message": "with https://review.opendev.org/c/openstack/tripleo-common/+/861804, it works with ansible -i inventories.\n\nDynamically it cannot be longer used, but that\u0027s out of scope here",
+      "parentUuid": "3b2a1e90_98dc4f4c",
+      "revId": "5ee31dca2db50d960fc68dbeb77dde58fb7dec2c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
