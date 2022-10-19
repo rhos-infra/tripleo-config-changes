@@ -16,6 +16,24 @@
       "message": "How does the inventory produced by the above differ from the ones found in the folloiwng?\n\n~/overcloud-deploy/cell1/config-download/cell1/tripleo-ansible-inventory.yaml /home/stack/inventories/{cell1.yaml,overcloud.yaml}\n\nIs it true that the one which calls tripleo-ansible-inventory does not have the  internal_api_vip problem described in [1]?\n\nIf so, why? I think that\u0027s still the question to answer to resolve in order to pick an approach to solve BZ 2089512. \n\n[1] https://bugzilla.redhat.com/show_bug.cgi?id\u003d2089512#c107",
       "revId": "5ee31dca2db50d960fc68dbeb77dde58fb7dec2c",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6cd1a28e_22e58934",
+        "filename": "tasks/multi_cell_v2_osp17/templates/post_tasks.sh",
+        "patchSetId": 11
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1010723
+      },
+      "writtenOn": "2022-10-19T12:31:30Z",
+      "side": 0,
+      "message": "I\u0027m not sure what is there supposed to be in /home/stack/inventories/{cell1.yaml,overcloud.yaml}\n\nMy assumption that\u0027s a simplification to use all of the produced inventories in a single swath, established as of 16.x multi-cell CI jobs\n\nThis change just copies the generated stacks\u0027 inventories into the same expected path and assumes those are compatible (but they apparently not).\nAnd those there are produced by tripleo_generate_ansible_inventory calling TripleoInventory class of tripleo_common inventory.py, which doesn\u0027t use TripleoInventories and inventories.py. The latter seems have fallen behind and needs fixing, like https://review.opendev.org/c/openstack/tripleo-common/+/861804.",
+      "parentUuid": "cff5a203_ffc6e0b6",
+      "revId": "5ee31dca2db50d960fc68dbeb77dde58fb7dec2c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
