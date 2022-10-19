@@ -34,6 +34,24 @@
       "parentUuid": "cff5a203_ffc6e0b6",
       "revId": "5ee31dca2db50d960fc68dbeb77dde58fb7dec2c",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3b2a1e90_98dc4f4c",
+        "filename": "tasks/multi_cell_v2_osp17/templates/post_tasks.sh",
+        "patchSetId": 11
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1010723
+      },
+      "writtenOn": "2022-10-19T12:33:49Z",
+      "side": 0,
+      "message": "It is not known whether the one which calls tripleo-ansible-inventory does have the  internal_api_vip problem described in the bz, or not - because it needs more fixing. I\u0027ll try the linked patch by Oliver and see. If it works, my assumption this ansible -i inventories should be changed to dynamic ansible -i \u003cmodule_path\u003e/inventories.py",
+      "parentUuid": "6cd1a28e_22e58934",
+      "revId": "5ee31dca2db50d960fc68dbeb77dde58fb7dec2c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
