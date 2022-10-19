@@ -16,6 +16,24 @@
       "message": "I found a problem with this.\nWhen we call it like that, /etc/hosts gets unexpected internal_api_vip from the controller hostvars instead of cell1 controller hostvars. It would OK if we call it with inventories/cell1.yaml. But then I\u0027m not sure how to split tasks for controllers /etc/hosts adding vs cell controllers - both need to operate different inventories and prolly cannot do the job in a single call",
       "revId": "81c2ad5913e7019cb8d23c9326f40f45f46e4466",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6d7981f7_22bd142a",
+        "filename": "tasks/multi_cell_v2_osp17/templates/post_tasks.sh",
+        "patchSetId": 9
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1010723
+      },
+      "writtenOn": "2022-10-19T12:37:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d35dc1ed_65586976",
+      "revId": "81c2ad5913e7019cb8d23c9326f40f45f46e4466",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
