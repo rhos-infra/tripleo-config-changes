@@ -72,6 +72,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0f3d20c2_f9162564",
+        "filename": "tasks/multi_cell_v2_osp17/templates/post_tasks.sh",
+        "patchSetId": 11
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1010723
+      },
+      "writtenOn": "2022-10-19T15:18:22Z",
+      "side": 1,
+      "message": "it looks good to me, please go for it",
+      "parentUuid": "6f6d3f3b_1dc29900",
+      "revId": "358c3c5017aafbce188661e0f4ab5a02133412b7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "84a6e8f5_8227966d",
