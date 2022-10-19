@@ -20,6 +20,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "6bcf9700_b0609bac",
+        "filename": "tasks/multi_cell_v2_osp17/templates/post_tasks.sh",
+        "patchSetId": 11
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1010723
+      },
+      "writtenOn": "2022-10-19T12:19:00Z",
+      "side": 1,
+      "message": "for 16.x there is no changes expected, and I\u0027ve split it into \ntasks/multi_cell_v2_osp16/templates/post_tasks.sh (unchanged) and this one, for 17.x only. Does that reply to your question?",
+      "parentUuid": "4ffebf89_ac98b7f4",
+      "revId": "358c3c5017aafbce188661e0f4ab5a02133412b7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "84a6e8f5_8227966d",
         "filename": "tasks/multi_cell_v2_osp17/templates/post_tasks.sh",
         "patchSetId": 11
