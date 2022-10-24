@@ -16,6 +16,23 @@
       "message": "Testing on 16.x now, will remove -1 after getting results downstream.",
       "revId": "bb0e8e1ccd77bf8caedfd37e72700d0e980437b6",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "91b51fad_84ade0fc",
+        "filename": "tasks/multi_cell_v2_osp/pre_rhos_17.yml",
+        "patchSetId": 14
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1010723
+      },
+      "writtenOn": "2022-10-24T15:26:56Z",
+      "side": 1,
+      "message": "please have --cell-stack passed in the export command. that will disable the filtering, so we can have the rabbitmq boostrab short node name",
+      "revId": "bb0e8e1ccd77bf8caedfd37e72700d0e980437b6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
