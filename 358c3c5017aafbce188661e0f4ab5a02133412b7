@@ -141,6 +141,24 @@
       "parentUuid": "085b629e_601996c9",
       "revId": "358c3c5017aafbce188661e0f4ab5a02133412b7",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7daa2048_43cbb5a1",
+        "filename": "tasks/multi_cell_v2_osp17/templates/post_tasks.sh",
+        "patchSetId": 11
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1010723
+      },
+      "writtenOn": "2022-10-24T14:17:54Z",
+      "side": 1,
+      "message": "yes, this revision is already fully adapted for https://review.opendev.org/c/openstack/tripleo-common/+/861804",
+      "parentUuid": "69e793b1_1e61b333",
+      "revId": "358c3c5017aafbce188661e0f4ab5a02133412b7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
