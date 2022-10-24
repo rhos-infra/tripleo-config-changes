@@ -33,6 +33,24 @@
       "message": "please have --cell-stack passed in the export command. that will disable the filtering, so we can have the rabbitmq boostrab short node name",
       "revId": "bb0e8e1ccd77bf8caedfd37e72700d0e980437b6",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "49a537bd_8362829b",
+        "filename": "tasks/multi_cell_v2_osp/pre_rhos_17.yml",
+        "patchSetId": 14
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1012138
+      },
+      "writtenOn": "2022-10-24T18:50:50Z",
+      "side": 1,
+      "message": "I\u0027ve just tested filtering with wallaby and it seems to be working correctly. Something else is failing here...",
+      "parentUuid": "91b51fad_84ade0fc",
+      "revId": "bb0e8e1ccd77bf8caedfd37e72700d0e980437b6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
