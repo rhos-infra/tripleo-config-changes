@@ -55,6 +55,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "c7216eb3_e85ff287",
+        "filename": "tasks/multi_cell_v2_osp/pre_rhos_17.yml",
+        "patchSetId": 13
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1010723
+      },
+      "writtenOn": "2022-10-24T14:18:30Z",
+      "side": 1,
+      "message": "yes. gerrit hotkeys UX is poor",
+      "parentUuid": "8bce47cc_56bc4a18",
+      "revId": "741d25eebdf02ed492d01f5eeafdd3030aff7877",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "901bc7c3_0be2f6fd",
         "filename": "tasks/multi_cell_v2_osp/pre_rhos_17.yml",
         "patchSetId": 13
