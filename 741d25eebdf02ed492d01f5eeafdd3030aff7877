@@ -37,6 +37,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "8bce47cc_56bc4a18",
+        "filename": "tasks/multi_cell_v2_osp/pre_rhos_17.yml",
+        "patchSetId": 13
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1017127
+      },
+      "writtenOn": "2022-10-24T14:15:02Z",
+      "side": 1,
+      "message": "Is this comment meant for #L27?",
+      "parentUuid": "ce5cb9ce_e74a0c24",
+      "revId": "741d25eebdf02ed492d01f5eeafdd3030aff7877",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "901bc7c3_0be2f6fd",
         "filename": "tasks/multi_cell_v2_osp/pre_rhos_17.yml",
         "patchSetId": 13
@@ -48,6 +66,30 @@
       "writtenOn": "2022-10-24T14:12:47Z",
       "side": 1,
       "message": "t",
+      "range": {
+        "startLine": 23,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 144
+      },
+      "revId": "741d25eebdf02ed492d01f5eeafdd3030aff7877",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "24634a82_ef50c1f3",
+        "filename": "tasks/multi_cell_v2_osp/pre_rhos_17.yml",
+        "patchSetId": 13
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1017127
+      },
+      "writtenOn": "2022-10-24T14:15:02Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "901bc7c3_0be2f6fd",
       "range": {
         "startLine": 23,
         "startChar": 0,
