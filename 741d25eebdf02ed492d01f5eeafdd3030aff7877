@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "77d49187_45d57d17",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 13
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017127
+      },
+      "writtenOn": "2022-10-24T14:10:21Z",
+      "side": 1,
+      "message": "17 Deployments work downstream with this commit along with all the upstream patches for multi-cellv2 [1].  Would just like to verify this deployment change on 16 and I think this will be ready for review. \n\n[1] https://bugzilla.redhat.com/show_bug.cgi?id\u003d2089512",
+      "revId": "741d25eebdf02ed492d01f5eeafdd3030aff7877",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
