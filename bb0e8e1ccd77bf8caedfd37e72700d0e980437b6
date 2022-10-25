@@ -51,6 +51,24 @@
       "parentUuid": "91b51fad_84ade0fc",
       "revId": "bb0e8e1ccd77bf8caedfd37e72700d0e980437b6",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a75fde9c_56afa5b1",
+        "filename": "tasks/multi_cell_v2_osp/pre_rhos_17.yml",
+        "patchSetId": 14
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1010723
+      },
+      "writtenOn": "2022-10-25T12:51:58Z",
+      "side": 1,
+      "message": "I presume https://review.opendev.org/c/openstack/python-tripleoclient/+/862539 has fixed this",
+      "parentUuid": "49a537bd_8362829b",
+      "revId": "bb0e8e1ccd77bf8caedfd37e72700d0e980437b6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
