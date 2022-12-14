@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c1fb3baf_f58113f9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 16
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010723
+      },
+      "writtenOn": "2022-12-14T13:47:47Z",
+      "side": 1,
+      "message": "@all, as James has verified this, we can merge it now please",
+      "revId": "a20c2f024632ffddd0e47dfed77beaaf8b60ade1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
