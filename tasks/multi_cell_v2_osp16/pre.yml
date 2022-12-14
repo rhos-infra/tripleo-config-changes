@@ -26,7 +26,7 @@
 - name: export cell-input.yaml file 16.2+
   shell: |
         source ~/stackrc
-        openstack overcloud cell export -f --output-file /home/stack/cell1/cell-input.yaml
+        sudo -E openstack overcloud cell export -f --output-file /home/stack/cell1/cell-input.yaml
   when: version_to_use is version('16.2', '>=')
 
 - name: Generate a role file
