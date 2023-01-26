@@ -16,6 +16,63 @@
       "message": "Need to add a condition to avoid doing the new block in the event of a controller being present that has not been claimed.",
       "revId": "d9d005f3b204801e77b6ba042e9fd7fe48c2b0f2",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "490e2831_21f53115",
+        "filename": "tasks/multi_cell_v2_osp/pre_rhos_17.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1010723
+      },
+      "writtenOn": "2023-01-26T14:46:03Z",
+      "side": 1,
+      "message": "so this is required for multi-stack FFU, right?",
+      "revId": "d9d005f3b204801e77b6ba042e9fd7fe48c2b0f2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ac1e070a_90c90171",
+        "filename": "tasks/multi_cell_v2_osp/pre_rhos_17.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1010723
+      },
+      "writtenOn": "2023-01-26T14:46:03Z",
+      "side": 1,
+      "message": "shouldn\u0027t we use metalsmith CLI as of OSP17?",
+      "range": {
+        "startLine": 31,
+        "startChar": 30,
+        "endLine": 31,
+        "endChar": 59
+      },
+      "revId": "d9d005f3b204801e77b6ba042e9fd7fe48c2b0f2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d81451c8_7214ca0d",
+        "filename": "tasks/multi_cell_v2_osp/templates/rhos_17/post_tasks.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1010723
+      },
+      "writtenOn": "2023-01-26T14:46:03Z",
+      "side": 1,
+      "message": "this one is a nicely spotted!",
+      "revId": "d9d005f3b204801e77b6ba042e9fd7fe48c2b0f2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
