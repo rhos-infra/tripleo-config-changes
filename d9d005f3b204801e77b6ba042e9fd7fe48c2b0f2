@@ -37,6 +37,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "203ba066_17690f88",
+        "filename": "tasks/multi_cell_v2_osp/pre_rhos_17.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1017127
+      },
+      "writtenOn": "2023-01-26T14:54:07Z",
+      "side": 1,
+      "message": "There is an issue with infrared where creating multiple controllers but leaving them \u0027idle\u0027 until the scale up causes the deployment to fail. So this block is just converting one of the extra computes to a controller role that will then be used as the cell-controller.  But this step should not be required for traditional scale up and FFU.  If I can bypass the issues with IR then I will revert this change.\n\nFor the interim I am going to also add a skip condition as well in the event that there are available controllers when it gets to this stage of deployment.",
+      "parentUuid": "490e2831_21f53115",
+      "revId": "d9d005f3b204801e77b6ba042e9fd7fe48c2b0f2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ac1e070a_90c90171",
         "filename": "tasks/multi_cell_v2_osp/pre_rhos_17.yml",
         "patchSetId": 2
@@ -48,6 +66,30 @@
       "writtenOn": "2023-01-26T14:46:03Z",
       "side": 1,
       "message": "shouldn\u0027t we use metalsmith CLI as of OSP17?",
+      "range": {
+        "startLine": 31,
+        "startChar": 30,
+        "endLine": 31,
+        "endChar": 59
+      },
+      "revId": "d9d005f3b204801e77b6ba042e9fd7fe48c2b0f2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ceab34a9_b41c537f",
+        "filename": "tasks/multi_cell_v2_osp/pre_rhos_17.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1017127
+      },
+      "writtenOn": "2023-01-26T14:54:07Z",
+      "side": 1,
+      "message": "Good point let update and retest.",
+      "parentUuid": "ac1e070a_90c90171",
       "range": {
         "startLine": 31,
         "startChar": 30,
