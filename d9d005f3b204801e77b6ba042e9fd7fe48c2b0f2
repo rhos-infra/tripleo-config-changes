@@ -18,6 +18,23 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "6bf76f04_c1c5fded",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017127
+      },
+      "writtenOn": "2023-01-30T22:20:40Z",
+      "side": 1,
+      "message": "Tested downstream with new conditional and deployment is fully coming up and tempest failures are unrelated to deployment.",
+      "revId": "d9d005f3b204801e77b6ba042e9fd7fe48c2b0f2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "490e2831_21f53115",
@@ -49,6 +66,24 @@
       "side": 1,
       "message": "There is an issue with infrared where creating multiple controllers but leaving them \u0027idle\u0027 until the scale up causes the deployment to fail. So this block is just converting one of the extra computes to a controller role that will then be used as the cell-controller.  But this step should not be required for traditional scale up and FFU.  If I can bypass the issues with IR then I will revert this change.\n\nFor the interim I am going to also add a skip condition as well in the event that there are available controllers when it gets to this stage of deployment.",
       "parentUuid": "490e2831_21f53115",
+      "revId": "d9d005f3b204801e77b6ba042e9fd7fe48c2b0f2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1ef52110_10616f8f",
+        "filename": "tasks/multi_cell_v2_osp/pre_rhos_17.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1017127
+      },
+      "writtenOn": "2023-01-30T22:20:40Z",
+      "side": 1,
+      "message": "Metalsmith only shows active nodes available, i.e. after the initial deployment metalsmith would only show one controller and one compute.  It will not show the 3 other computes that could be utilized when scaling up.  I think within the scope of 17 this approach should be fine unless you have other ideas.",
+      "parentUuid": "203ba066_17690f88",
       "revId": "d9d005f3b204801e77b6ba042e9fd7fe48c2b0f2",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
