@@ -35,6 +35,23 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7dee1bbc_c8868d35",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010723
+      },
+      "writtenOn": "2023-02-01T15:31:34Z",
+      "side": 1,
+      "message": "LGTM\nI didn\u0027t know that openstack baremetal CLI stays with us for OSP17.1 undercloud as well",
+      "revId": "d9d005f3b204801e77b6ba042e9fd7fe48c2b0f2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "490e2831_21f53115",
@@ -84,6 +101,24 @@
       "side": 1,
       "message": "Metalsmith only shows active nodes available, i.e. after the initial deployment metalsmith would only show one controller and one compute.  It will not show the 3 other computes that could be utilized when scaling up.  I think within the scope of 17 this approach should be fine unless you have other ideas.",
       "parentUuid": "203ba066_17690f88",
+      "revId": "d9d005f3b204801e77b6ba042e9fd7fe48c2b0f2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ef747d7f_8f10f8a6",
+        "filename": "tasks/multi_cell_v2_osp/pre_rhos_17.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1010723
+      },
+      "writtenOn": "2023-02-01T15:31:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1ef52110_10616f8f",
       "revId": "d9d005f3b204801e77b6ba042e9fd7fe48c2b0f2",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
