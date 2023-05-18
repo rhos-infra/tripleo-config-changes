@@ -134,7 +134,7 @@
 - name: change the stack name
   replace:
         path: /home/stack/overcloud_cell_deployment.sh
-        regexp: "--stack {{ test.overcloud.stack }}"
+        regexp: '--stack {{ test.overcloud.stack }}'
         replace: '--stack cell1'
 
 - name: Update vip deployed path
