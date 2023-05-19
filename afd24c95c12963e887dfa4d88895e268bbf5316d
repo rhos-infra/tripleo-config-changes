@@ -33,6 +33,23 @@
       "message": "FFWD upgrade job testing this: https://rhos-ci-staging-jenkins.lab.eng.tlv2.redhat.com/view/DFG/view/upgrades/view/ffu/job/DFG-upgrades-ffu-17.1-from-16.2-passed_phase2-3cont_2comp_3ceph_1ipa_1cellcont_2cell-ipv4-multi_cell/",
       "revId": "afd24c95c12963e887dfa4d88895e268bbf5316d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3b505755_52832be9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1006992
+      },
+      "writtenOn": "2023-05-19T12:02:00Z",
+      "side": 1,
+      "message": "This looks like it might work. I haven\u0027t tested it, but I\u0027m assuming from this patch that you\u0027ve tried it and that it\u0027s worked.\n\nThe overall change makes sense to me.\n\nJust want to point out a thought that occurred to me...\n\nMy understanding, and correct me if I\u0027m wrong, is that cell deployment is similar to DCN deployment where we have a separate stack per cell, just like in DCN how we have a separate stack per AZ. If I\u0027m right, then an alternative could be to follow our DCN pattern.\n\nDeploy control stack with ceph and then generate an environment file from it already containing the FSID, Keys, and Mon IPs with:\n\nopenstack overcloud export ceph \\\n        --stack control-plane \\\n        --output-file ~/central_ceph_external.yaml\n\nHowever, the above uses CephExternalMultiConfig but since you\u0027re not adding an additional ceph cluster in the cell to be deployed, that might not give you what you want.",
+      "revId": "afd24c95c12963e887dfa4d88895e268bbf5316d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
