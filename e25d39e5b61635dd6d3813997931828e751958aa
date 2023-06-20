@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bba87cd8_98ee1966",
+        "filename": "tasks/multi_cell_v2_osp/pre_rhos_16.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 1016895
+      },
+      "writtenOn": "2023-06-20T14:24:18Z",
+      "side": 1,
+      "message": "nit: deploy",
+      "range": {
+        "startLine": 128,
+        "startChar": 35,
+        "endLine": 128,
+        "endChar": 40
+      },
+      "revId": "e25d39e5b61635dd6d3813997931828e751958aa",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
