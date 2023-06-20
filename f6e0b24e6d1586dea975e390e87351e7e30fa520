@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a4c57a0c_a1aa21e5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1016895
+      },
+      "writtenOn": "2023-06-20T14:20:05Z",
+      "side": 1,
+      "message": "LGTM - I might have renamed the template files to have a .j2 extension to signify that they\u0027re jinja intepreted, but that\u0027s a matter of style.",
+      "revId": "f6e0b24e6d1586dea975e390e87351e7e30fa520",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
