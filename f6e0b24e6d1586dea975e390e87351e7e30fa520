@@ -16,6 +16,23 @@
       "message": "LGTM - I might have renamed the template files to have a .j2 extension to signify that they\u0027re jinja intepreted, but that\u0027s a matter of style.",
       "revId": "f6e0b24e6d1586dea975e390e87351e7e30fa520",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4011a3db_a4cef611",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010723
+      },
+      "writtenOn": "2023-06-21T12:27:18Z",
+      "side": 1,
+      "message": "PTAAL",
+      "revId": "f6e0b24e6d1586dea975e390e87351e7e30fa520",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
