@@ -39,6 +39,23 @@
       },
       "revId": "e25d39e5b61635dd6d3813997931828e751958aa",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "61e1c9a8_ec48e868",
+        "filename": "tasks/multi_cell_v2_osp/pre_rhos_17.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 1010723
+      },
+      "writtenOn": "2023-06-21T12:32:03Z",
+      "side": 1,
+      "message": "was this intentional? don\u0027t we want this interpolated?\nalso, this looks more related to the bottom patch",
+      "revId": "e25d39e5b61635dd6d3813997931828e751958aa",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
