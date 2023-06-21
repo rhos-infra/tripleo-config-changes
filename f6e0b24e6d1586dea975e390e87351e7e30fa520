@@ -33,6 +33,23 @@
       "message": "PTAAL",
       "revId": "f6e0b24e6d1586dea975e390e87351e7e30fa520",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "90163d38_5f45320b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010723
+      },
+      "writtenOn": "2023-06-21T12:28:35Z",
+      "side": 1,
+      "message": "@james could you please verify if that pack of changes works with our greenfield OSP17.x multi-cell jobs?",
+      "revId": "f6e0b24e6d1586dea975e390e87351e7e30fa520",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
