@@ -18,6 +18,23 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "964e7af2_64bde509",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017785
+      },
+      "writtenOn": "2023-06-23T07:55:26Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "e25d39e5b61635dd6d3813997931828e751958aa",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "bba87cd8_98ee1966",
