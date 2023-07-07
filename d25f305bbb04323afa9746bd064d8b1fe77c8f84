@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a8567bdc_1864644b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017127
+      },
+      "writtenOn": "2023-07-07T19:15:18Z",
+      "side": 1,
+      "message": "Downstream testing results in staging are passing with default compute parameter count.",
+      "revId": "d25f305bbb04323afa9746bd064d8b1fe77c8f84",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
