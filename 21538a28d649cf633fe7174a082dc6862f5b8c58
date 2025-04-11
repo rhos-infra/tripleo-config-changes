@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "312f9f0f_6b998a7e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1016110
+      },
+      "writtenOn": "2025-04-11T14:48:22Z",
+      "side": 1,
+      "message": "No gate jobs for this repository, but the change is safe (a few more known parameters for openstack image create). Manually adding V+1.",
+      "revId": "21538a28d649cf633fe7174a082dc6862f5b8c58",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
