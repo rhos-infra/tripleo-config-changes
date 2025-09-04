@@ -69,6 +69,23 @@
       "parentUuid": "54635441_8f88c3f1",
       "revId": "4b6c01f12951d0f8488d32e93dbaf55a6d5bf1aa",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "006dae7d_bd73fe7f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010723
+      },
+      "writtenOn": "2025-09-04T13:07:29Z",
+      "side": 1,
+      "message": "lgtm, let\u0027s make sure the multicell greenfield job passes with this change",
+      "revId": "4b6c01f12951d0f8488d32e93dbaf55a6d5bf1aa",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
