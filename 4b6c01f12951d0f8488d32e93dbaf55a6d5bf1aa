@@ -16,6 +16,41 @@
       "message": "I didn\u0027t even know I could review this, maybe the set of people here is more on Tuvya\u0026co.\n\nThat said: why just rhos_16 and not also rhos_17 ?",
       "revId": "4b6c01f12951d0f8488d32e93dbaf55a6d5bf1aa",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "18137827_ec2754d5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1004364
+      },
+      "writtenOn": "2025-09-04T10:37:29Z",
+      "side": 1,
+      "message": "Fixes the CI job failure.",
+      "revId": "4b6c01f12951d0f8488d32e93dbaf55a6d5bf1aa",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "54635441_8f88c3f1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1004364
+      },
+      "writtenOn": "2025-09-04T10:37:29Z",
+      "side": 1,
+      "message": "We are fixing 16-\u003e17 job.",
+      "parentUuid": "f1708fe4_6c1c41a2",
+      "revId": "4b6c01f12951d0f8488d32e93dbaf55a6d5bf1aa",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
