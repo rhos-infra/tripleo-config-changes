@@ -1,0 +1,12 @@
+Code-Review+2: Juan Badia Payno <jbadiapa@redhat.com>
+Code-Review+2: Arx Cruz <arxcruz@redhat.com>
+Code-Review+2: Luigi Toscano <ltoscano@redhat.com>
+Code-Review+2: Jesse Pretorius (odyssey4me) <jesse@odyssey4.me>
+Code-Review+2: <jparker@redhat.com>
+Verified+1: <jparker@redhat.com>
+Submitted-by: Tuvya Korol <tkorol@redhat.com>
+Submitted-at: Tue, 23 Sep 2025 13:49:20 +0000
+Reviewed-on: https://review.gerrithub.io/c/rhos-infra/tripleo-config-changes/+/1222674
+Comments-Total: 2
+Project: rhos-infra/tripleo-config-changes
+Branch: refs/heads/master
