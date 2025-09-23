@@ -1,0 +1,10 @@
+Verified+1: <jparker@redhat.com>
+Code-Review+1: Jesse Pretorius (odyssey4me) <jesse@odyssey4.me>
+Code-Review+2: Ashish Gupta <ashigupt@redhat.com>
+Code-Review+2: <jparker@redhat.com>
+Code-Review+2: Juan Badia Payno <jbadiapa@redhat.com>
+Submitted-by: Tuvya Korol <tkorol@redhat.com>
+Submitted-at: Tue, 23 Sep 2025 13:51:50 +0000
+Reviewed-on: https://review.gerrithub.io/c/rhos-infra/tripleo-config-changes/+/1222678
+Project: rhos-infra/tripleo-config-changes
+Branch: refs/heads/master
