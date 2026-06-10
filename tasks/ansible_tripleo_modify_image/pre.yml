@@ -64,7 +64,7 @@
         set modify = {
           "modify_vars": {
             "tasks_from": "rpm_install.yml",
-            "rpms_path": "{{ ansible_env.HOME }}/" ~ test.tripleo.modify.container ~ "-modify-dir"
+            "rpms_path": ansible_env.HOME ~ "/" ~ test.tripleo.modify.container ~ "-modify-dir"
           }
         }
       %}
@@ -83,7 +83,7 @@
         set modify = {
           "modify_vars": {
             "tasks_from": "modify_image.yml",
-            "modify_dir_path": "{{ ansible_env.HOME }}/" ~ test.tripleo.modify.container ~ "-modify-dir"
+            "modify_dir_path": ansible_env.HOME ~ "/" ~ test.tripleo.modify.container ~ "-modify-dir"
           }
         }
       %}
